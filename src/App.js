@@ -6,7 +6,7 @@ const arr = JSON.parse(
 
 const Join = ({words}) => {
   return <div id="join">
-            {words}.join(',')
+    {words.join(',')}
          </div>;
 };
 
