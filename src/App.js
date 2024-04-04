@@ -4,14 +4,16 @@ const arr = JSON.parse(
   window.localStorage.getItem("props") || `["hello","world"]`
 ); // do not change
 
-const Join = () => {
-  return <div id="join"></div>;
+const Join = ({words}) => {
+  return <div id="join">
+            {words}.join(',')
+         </div>;
 };
 
 const App = () => {
   return (
     <div id="main">
-      <Join />
+      <Join words={arr}/>
     </div>
   );
 };
